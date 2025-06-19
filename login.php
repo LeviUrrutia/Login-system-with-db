@@ -31,7 +31,7 @@
 
             <button type="submit">Login</button>
         </form>
-        <p>New here? <a href="signup.html">Create an account</a></p>
+        <p>New here? <a href="signup.php">Create an account</a></p>
     </div>
 </body>
 </html>

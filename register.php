@@ -13,7 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $check->get_result();
 
     if ($result->num_rows > 0) {
-        die("Email already registered.");
+        echo "Email already registered!!.";
+        die();
     }
 
     // Hash the password
