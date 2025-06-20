@@ -12,7 +12,7 @@
     <div class ="wrapper">
         <h1>Login</h1>
         <p id="error-message"></p>
-        <form id="form">
+        <form id="form" action="homepage.php" method="POST">
 
             <div>
                 <label for="email-input">

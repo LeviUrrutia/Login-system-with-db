@@ -21,11 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // Insert user into database
-    $stmt = $conn->prepare("INSERT INTO accounts (firstName, email, password) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO accounts (firstname, email, password) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $firstname, $email, $hashedPassword); // save both as hash
-
+    
     if ($stmt->execute()) {
-        echo "Registration successful!";
+        session_start();
+        $_SESSION['email'] = $email;
+        header("Location: login.php");
+        exit();
+        //echo "Registration successful!";
     } else {
         echo "Error: " . $stmt->error;
     }
