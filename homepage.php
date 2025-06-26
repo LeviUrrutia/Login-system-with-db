@@ -12,20 +12,28 @@ include("connect.php");
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>   
-    <div class="container">
-        <p id="promo-deal">
-            Promo Deals
-        </p>
-        <p id="transaction">
-            Transactions
-        </p>
-        <p id="my-profile">
-            My Profile
-        </p>
-        <p id="contact-us">
-            Contact Us
-        </p>
-    </div>
+    <div class="white-section"></div>
+
+    <h1 class="header">
+        <a href="#" class="logo">Logo</a>
+
+    <div class="navbar"> 
+        <a href="#subs" id="subscription">Subscriptions</a>
+        <a href="#help" id="help">Help</a>
+        <div class="dropdown">
+            <button class="dropbtn">Account
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Transactions</a>
+                <a href="#">Setting</a>
+                <a href="#">Logout</a>
+                </div>
+        </div>
+</div>
+
+        <!--<a href="#profile" id="my-profile">My Profile</a>--> 
+
 <!--<div style="text-align:center; padding:15%;">
       <p  style="font-size:50px; font-weight:bold;">
        Registration Successful!
