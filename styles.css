@@ -35,19 +35,29 @@ body {
     font-size: 32px;
     text-decoration: none;
     font-weight: 600;
-    cursor: pointer;
-    
+    cursor: pointer; 
+    position: relative;
+    display: inline-block;
+}
+
+.logo::before {
+  content: attr(data-hover);
+  color: #8b0000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.logo:hover::before {
+  width: 100%;
 }
 
 /* Navbar container */
 .navbar {
- /* align-items: center;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-*/
 text-decoration: none;
 margin-left: 35px;
 border-bottom: 2px solid transparent;
@@ -57,10 +67,14 @@ border-bottom: 2px solid transparent;
 .navbar a {
   font-size: 16px;
   color: #f4f3f8;
-  padding: 14px 200px;
+  padding: 14px 100px;
   text-decoration: none;
+  font-weight: normal;
 }
 
+#help{
+  margin-right: 200px;
+}
 
 /* The dropdown container */
 .dropdown {
@@ -74,7 +88,7 @@ border-bottom: 2px solid transparent;
   border: none;
   outline: none;
   color: #f4f3f8;
-  padding: 14px 200px;
+  padding: 14px 100px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
@@ -110,12 +124,126 @@ border-bottom: 2px solid transparent;
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #264348;
-  opacity: 0.6;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.img-torri {
+  width: 300px;
+  position: absolute;
+  right: 1750px;
+  top: 800px;
+  z-index: 3;
+  border-style: solid;
+}
+
+.overlay a {
+  position: absolute;
+  top: 800px;
+  right: 1500px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #110C12;
+  padding: 14px 100px;
+  text-decoration: none;
+  z-index: 4;
+}
+
+.overlay a:hover {
+  text-decoration: underline;
+}
+
+.overlay p {
+  position: absolute;
+  width: 300px;
+  top: 830px;
+  right: 1380px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #110C12;
+  padding: 14px 50px;
+  text-decoration: none;
+  z-index: 5;
+}
+
+.img-sakura {
+  width: 300px;
+  position: absolute;
+  right: 1070px;
+  top: 800px;
+  z-index: 6;
+  border-style: solid;
+}
+
+.overlay-next a {
+  position: absolute;
+  top: 800px;
+  right: 780px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #110C12;
+  padding: 14px 100px;
+  text-decoration: none;
+  z-index: 7;
+}
+
+.overlay-next a:hover {
+  text-decoration: underline;
+}
+
+.overlay-next p {
+  position: absolute;
+  width: 300px;
+  top: 830px;
+  right: 690px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #110C12;
+  padding: 14px 50px;
+  text-decoration: none;
+  z-index: 5;
+}
+
+.img-food {
+  width: 300px;
+  height: 205px;
+  position: absolute;
+  right: 390px;
+  top: 800px;
+  z-index: 8;
+  border-style: solid;
+}
+
+.overlay-last a {
+  position: absolute;
+  top: 800px;
+  right: 180px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #110C12;
+  padding: 14px 100px;
+  text-decoration: none;
+  z-index: 9;
+}
+
+.overlay-last a:hover {
+  text-decoration: underline;
+}
+
+.overlay-last p {
+  position: absolute;
+  width: 300px;
+  top: 830px;
+  right: 15px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #110C12;
+  padding: 14px 50px;
+  text-decoration: none;
+  z-index: 10;
 }
 
 .white-section {
@@ -125,8 +253,75 @@ border-bottom: 2px solid transparent;
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 2;
   border-radius: 15px;
   border: 2px solid transparent;
   opacity: 0.6;
 }
+
+.button-45 {
+  align-items: center;
+  position: absolute;
+  top: 520px;
+  left: 100px;
+  background-color: #dd1b32;
+  background-position: 0 0;
+  border: 1px solid #df142b;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #f4f3f8;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+  outline: 0;
+}
+
+
+.button-45:active {
+  background-color: #8b0000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.button-45:hover {
+  background-color: #ec3232;
+  border-color: #f34d4d;
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+  background-color: #8b0000;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.japan_slogan {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  font-style: normal;
+  position: absolute;
+  top: 320px;
+  left: 70px;
+}
+
