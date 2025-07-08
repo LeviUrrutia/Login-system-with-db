@@ -46,6 +46,16 @@ $conn->close();
         h1 {
             font-size: 3rem;
             color: #333;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeSlideIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeSlideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>

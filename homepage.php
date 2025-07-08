@@ -59,7 +59,7 @@ include("connect.php");
         <a href="#" class="logo" data-hover="日本">日本</a>
 
     <div class="navbar"> 
-        <a href="#subs" id="subscription">Subscriptions</a>
+        <a href="subscription.php" id="subscription">Subscriptions</a>
         <a href="#help" id="help">Help</a>
         <div class="dropdown">
             <button class="dropbtn">Account
