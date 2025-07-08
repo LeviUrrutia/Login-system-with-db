@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->execute()) {
         session_start();
         $_SESSION['email'] = $email;
+        $_SESSION['firstName'] = $firstname;
         header("Location: login.php");
         exit();
         //echo "Registration successful!";

@@ -1,3 +1,37 @@
+<?php
+session_start();
+include 'connect.php';
+
+$errorMsg = '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $stmt = $conn->prepare("SELECT * FROM accounts WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 1) {
+        $user = $result->fetch_assoc();
+        if (password_verify($password, $user['password'])) {
+            $_SESSION['email'] = $user['email'];
+            $_SESSION['firstName'] = $user['firstName'];
+            header("Location: homepage.php");
+            exit();
+        } else {
+            $errorMsg = "Incorrect password.";
+        }
+    } else {
+        $errorMsg = "User not found.";
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +45,8 @@
 <body>
     <div class ="wrapper">
         <h1>Login</h1>
-        <p id="error-message"></p>
-        <form id="form" action="homepage.php" method="POST">
+        <p id="error-message"><?php echo $errorMsg; ?></p>
+        <form id="form" action="login.php" method="POST">
 
             <div>
                 <label for="email-input">
