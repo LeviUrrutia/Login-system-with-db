@@ -45,7 +45,7 @@
 
             <button type="submit">Sign Up</button>
         </form>
-        <p>Already have an account? <a href="login.php">login</a></p>
+        <p class="question">Already have an account? <a href="login.php">login</a></p>
     </div>
 </body>
 </html>
