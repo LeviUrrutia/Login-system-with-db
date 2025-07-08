@@ -15,7 +15,7 @@ include("connect.php");
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>   
-    <div class="white-section"></div>
+    <!--
     <img class="img-torri" src="torri.jpg" alt="torri">
     <div class="overlay">
         <a href="#spots" id="tourist_spots">Tourist Spots</a>
@@ -38,6 +38,43 @@ include("connect.php");
         <p>Japanese cuisine is known for its freshness and balance, featuring sushi, ramen, tempura, 
             and more—each dish reflecting a deep respect for tradition and flavor.</p>
     </div>
+
+    -->
+    <div class="white-section">
+
+    <div class="white-row">
+
+        <div class="section-torri">
+            <img class="img-torri" src="torri.jpg" alt="torri">
+                <div class="overlay">
+                    <a href="#spots" id="tourist_spots">Tourist Spots</a>
+                    <p>Japan offers a rich blend of ancient temples, serene landscapes, 
+                    and futuristic cities—explore iconic sites like Mount Fuji, Kyoto’s shrines, Tokyo’s vibrant streets, 
+                    and the historic beauty of Nara and Hiroshima.</p>
+            </div>
+        </div>
+
+        <div class="section-sakura">
+            <img class="img-sakura" src="sakura.jpg" alt="sakura">
+                <div class="overlay-next">
+                    <a href="#season" id="season">Best Time to Visit</a>
+                    <p>Japan has four distinct seasons—cherry blossoms in spring, 
+                    vibrant festivals in summer, colorful leaves in autumn, and snowy 
+                    landscapes in winter—each offering unique beauty and experiences.</p>
+            </div>
+        </div>
+
+        <div class="section-food">
+            <img class="img-food" src="food.jpg" alt="food">
+                <div class="overlay-last">
+                    <a href="#eat" id="eat">Food Trip</a>
+                    <p>Japanese cuisine is known for its freshness and balance, featuring sushi, ramen, tempura, 
+                    and more—each dish reflecting a deep respect for tradition and flavor.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <p class="japan_slogan">Discover the beauty, culture, and flavors of Japan</br>—an unforgettable journey awaits you!</p>
 <button class="button-45" role="button">Book Now!</button>
 
