@@ -6,7 +6,7 @@ html {
 
 body {
     min-height: 100vh;
-    background-image: url(japan.jpg);
+    background-image: url(assets/japan.jpg);
     background-size: cover;
     background-position: bottom;
     overflow: hidden;

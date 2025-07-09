@@ -17,7 +17,7 @@ html{
 }
 body{
     min-height: 100vh;
-    background-image: url(signup_japan.jpg);
+    background-image: url(assets/signup_japan.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -26,7 +26,7 @@ body{
 .wrapper{
     box-sizing: border-box;
     /*background-color: var(--base-color);*/
-    background-image: url(signup_bg2.png);
+    background-image: url(assets/signup_bg2.png);
     /*background-repeat: no-repeat;*/
     height: 100vh;
     width: max(28%, 600px);

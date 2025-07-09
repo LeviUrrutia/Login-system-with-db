@@ -136,5 +136,5 @@
     echo "You selected the <strong>$chosenPlan</strong> plan.";
 } else {
     echo "No subscription plan selected.";
-}
+}*/
 ?>

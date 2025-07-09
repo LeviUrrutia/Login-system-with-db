@@ -16,13 +16,13 @@ include("connect.php");
     <script type="text/javascript" src="validation.js" defer></script>
 </head>
 <body>   
-
+            <!--footer-->    
     <div class="white-section">
-
     <div class="white-row">
 
+            <!--torri gate section-->
         <div class="section-torri">
-            <img class="img-torri" src="torri.jpg" alt="torri">
+            <img class="img-torri" src="assets/torri.jpg" alt="torri">
                 <div class="overlay">
                     <a href="#spots" id="tourist_spots">Tourist Spots</a>
                     <p>Japan offers a rich blend of ancient temples, serene landscapes, 
@@ -30,9 +30,9 @@ include("connect.php");
                     and the historic beauty of Nara and Hiroshima.</p>
             </div>
         </div>
-
+            <!--sakura tree section-->
         <div class="section-sakura">
-            <img class="img-sakura" src="sakura.jpg" alt="sakura">
+            <img class="img-sakura" src="assets/sakura.jpg" alt="sakura">
                 <div class="overlay-next">
                     <a href="#season" id="season">Best Time to Visit</a>
                     <p>Japan has four distinct seasons—cherry blossoms in spring, 
@@ -40,9 +40,9 @@ include("connect.php");
                     landscapes in winter—each offering unique beauty and experiences.</p>
             </div>
         </div>
-
+            <!--food section-->
         <div class="section-food">
-            <img class="img-food" src="food.jpg" alt="food">
+            <img class="img-food" src="assets/food.jpg" alt="food">
                 <div class="overlay-last">
                     <a href="#eat" id="eat">Food Trip</a>
                     <p>Japanese cuisine is known for its freshness and balance, featuring sushi, ramen, tempura, 
@@ -52,9 +52,15 @@ include("connect.php");
     </div>
 </div>
 
+            <!--middle slogan-->
 <p class="japan_slogan">Discover the beauty, culture, and flavors of Japan</br>—an unforgettable journey awaits you!</p>
-<button class="button-45" role="button">Book Now!</button>
 
+            <!--book now button-->
+<a href="booking.php">
+<button class="button-45" role="button">Book Now!</button>
+</a>
+
+            <!--header-->
     <h1 class="header">
         <a href="#" class="logo" data-hover="日本">日本</a>
 
@@ -73,6 +79,8 @@ include("connect.php");
         </div>
 </div>
 
+
+            <!--logout script-->
 <script>
     const logoutLink = document.getElementById('logout-link');
 
