@@ -27,7 +27,11 @@ body{
     box-sizing: border-box;
     /*background-color: var(--base-color);*/
     background-image: url(assets/signup_bg2.png);
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
+    background-size: contain;         
+    background-position: center top;  
+    background-attachment: local;     
+    background-color: black;   
     height: 100vh;
     width: max(28%, 600px);
     padding: 10px;
@@ -36,7 +40,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: .6s ease-in-out 1.2s, visibility 0s 1s;
 }
 h1{
     font-size: 3rem;

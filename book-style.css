@@ -54,9 +54,27 @@ nav {
 }
 
 .nav__logo {
+  position: relative;  
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-dark);
+  overflow: hidden;
+}
+
+.nav__logo::before {
+  content: attr(data-hover);
+  color: #8b0000;
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nav__logo:hover::before {
+  width: 100%;
 }
 
 .nav__links {

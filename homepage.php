@@ -62,7 +62,7 @@ include("connect.php");
 
             <!--header-->
     <h1 class="header">
-        <a href="#" class="logo" data-hover="日本">日本</a>
+        <a href="homepage.php" class="logo" data-hover="日本">日本</a>
 
     <div class="navbar"> 
         <a href="subscription.php" id="subscription">Subscriptions</a>
