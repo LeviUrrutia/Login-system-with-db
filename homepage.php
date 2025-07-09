@@ -66,7 +66,7 @@ include("connect.php");
 
     <div class="navbar"> 
         <a href="subscription.php" id="subscription">Subscriptions</a>
-        <a href="#help" id="help">Help</a>
+        <a href="contact.php" id="contact">Contact Us</a>
         <div class="dropdown">
             <button class="dropbtn">Account
             <i class="fa fa-caret-down"></i>

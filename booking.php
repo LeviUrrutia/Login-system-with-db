@@ -8,7 +8,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="book-style.css" />
-    <title>Web Design Mastery | WDM&Co</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Booking</title>
   </head>
   <body>
     
@@ -68,60 +69,60 @@
           <img src="assets/hotel1_acekyoto.jpg" alt="popular hotel" />
           <div class="popular__content">
             <div class="popular__card__header">
-              <h4>The Plaza Hotel</h4>
-              <h4>$499</h4>
+              <h4>Ace Hotel Kyoto</h4>
+              <h4>$549</h4>
             </div>
-            <p>New York City, USA</p>
+            <p>Kyoto, Japan</p>
           </div>
         </div>
         <div class="popular__card">
           <img src="assets/hotel2_granbell.jpg" alt="popular hotel" />
           <div class="popular__content">
             <div class="popular__card__header">
-              <h4>Ritz Paris</h4>
-              <h4>$549</h4>
+              <h4>Kyoto Granbell Hotel</h4>
+              <h4>$499</h4>
             </div>
-            <p>Paris, France</p>
+            <p>Kyoto, Japan</p>
           </div>
         </div>
         <div class="popular__card">
           <img src="assets/hotel3_hyatt.jpg" alt="popular hotel" />
           <div class="popular__content">
             <div class="popular__card__header">
-              <h4>The Peninsula</h4>
+              <h4>Hyatt Regency Hotel</h4>
               <h4>$599</h4>
             </div>
-            <p>Hong Kong</p>
+            <p>Kyoto, Japan</p>
           </div>
         </div>
         <div class="popular__card">
           <img src="assets/hotel4_ritz.jpg" alt="popular hotel" />
           <div class="popular__content">
             <div class="popular__card__header">
-              <h4>Atlantis The Palm</h4>
-              <h4>$449</h4>
+              <h4>The Ritz-Carlton Okinawa</h4>
+              <h4>$549</h4>
             </div>
-            <p>Dubai, United Arab Emirates</p>
+            <p>Okinawa, Japan</p>
           </div>
         </div>
         <div class="popular__card">
           <img src="assets/hotel5_fufu.jpg" alt="popular hotel" />
           <div class="popular__content">
             <div class="popular__card__header">
-              <h4>The Ritz-Carlton</h4>
+              <h4>Fufu Kawaguchiko</h4>
               <h4>$649</h4>
             </div>
-            <p>Tokyo, Japan</p>
+            <p>Mount Fuji, Japan</p>
           </div>
         </div>
         <div class="popular__card">
           <img src="assets/hotel6_wanosato.jpg" alt="popular hotel" />
           <div class="popular__content">
             <div class="popular__card__header">
-              <h4>Marina Bay Sands</h4>
-              <h4>$549</h4>
+              <h4>Wanosato</h4>
+              <h4>$449</h4>
             </div>
-            <p>Singapore</p>
+            <p>Takayama, Japan</p>
           </div>
         </div>
       </div>
@@ -129,7 +130,13 @@
 
     <section class="client">
       <div class="section__container client__container">
-        <h2 class="section__header">What our client say</h2>
+        <h2 class="section__header">Client Reviews 
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+      </h2>
         <div class="client__grid">
           <div class="client__card">
             <img src="assets/client-1.jpg" alt="client" />
@@ -160,7 +167,9 @@
       <div class="reward__container">
         <p>100+ discount codes</p>
         <h4>Join rewards and discover amazing discounts on your booking</h4>
-        <button class="reward__btn">Join Rewards</button>
+        <a href="subscription.php">
+        <button class="reward__btn">Join</button>
+        </a>
       </div>
     </section>
 
