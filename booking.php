@@ -17,7 +17,7 @@
     <a href="homepage.php" class="nav__logo" data-hover="日本">日本</a>
       <ul class="nav__links">
         <li class="link"><a href="subscription.php">Subscription</a></li>
-        <li class="link"><a href="#">Contact Us</a></li>
+        <li class="link"><a href="contact.php">Contact Us</a></li>
       </ul>
     </nav>
     <header class="section__container header__container">
