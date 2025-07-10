@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
-    <div class="container">
-        <p>Send us a message</p>
 
+    <div class="container">
+
+    <h2>Send us a message</h2>
+        
         <form method="POST" action="send-email.php">
             
             <label for="name">Name</label>
@@ -23,7 +25,7 @@
             <input type="text" name="subject" id="subject" required>
 
             <label for="message">Message</label>
-            <input type="text" name="message" id="message" required>
+            <textarea name="message" id="message" row="5" required></textarea>
 
 </br>
 
