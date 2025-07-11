@@ -5,7 +5,7 @@
   --primary-color-dark: #435681;
   --text-dark: #333333;
   --text-light: #767268;
-  /*--extra-light: #f3f4f6;*/
+  --extra-light: #f3f4f6;
   --white: #ffffff;
   --max-width: 1200px;
 }
@@ -40,7 +40,7 @@ img {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: black;
+  background-color: white;
   color: white;
 }
 

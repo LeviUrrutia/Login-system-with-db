@@ -14,7 +14,7 @@
   <body>
     
     <nav>    
-    <a href="homepage.php" class="nav__logo" data-hover="日本">日本</a>
+    <a href="homepage.php" class="nav__logo" data-hover="Home">Home</a>
       <ul class="nav__links">
         <li class="link"><a href="subscription.php">Subscription</a></li>
         <li class="link"><a href="contact.php">Contact Us</a></li>
@@ -141,22 +141,21 @@
           <div class="client__card">
             <img src="assets/client-1.jpg" alt="client" />
             <p>
-              The booking process was seamless, and the confirmation was
-              instant. I highly recommend WDM&Co for hassle-free hotel bookings.
+            I couldn’t be happier with the website! It’s clean, professional, and super easy to navigate. 
+            My customers have even complimented it! The attention to detail and responsiveness is top-notch. 10/10 would recommend!
             </p>
           </div>
           <div class="client__card">
             <img src="assets/client-2.jpg" alt="client" />
             <p>
-              The website provided detailed information about hotel, including
-              amenities, photos, which helped me make an informed decision.
+            Absolutely loved working with this team. The site perfectly reflects my brand and style, 
+              and it’s lightning fast on both mobile and desktop. My portfolio finally looks as good as my work!
             </p>
           </div>
           <div class="client__card">
             <img src="assets/client-3.jpg" alt="client" />
             <p>
-              I was able to book a room within minutes, and the hotel exceeded
-              my expectations. I appreciate WDM&Co's efficiency and reliability.
+            I’ve worked with a few web developers before, but this experience was by far the best. Everything was done on time, communication was great, and the final product blew me away. Highly professional and creative!
             </p>
           </div>
         </div>
@@ -176,15 +175,14 @@
     <footer class="footer">
       <div class="section__container footer__container">
         <div class="footer__col">
-          <h3>WDM&Co</h3>
+          <h3>Fuji Sights</h3>
           <p>
-            WDM&Co is a premier hotel booking website that offers a seamless and
-            convenient way to find and book accommodations worldwide.
+          Fuji Sights Travels was founded by a team of travel enthusiasts with a deep love for Japanese culture. 
+          Dedicated to provide the experience of beauty, history, and modern wonders of Japan.
           </p>
           <p>
-            With a user-friendly interface and a vast selection of hotels,
-            WDM&Co aims to provide a stress-free experience for travelers
-            seeking the perfect stay.
+          We specialize in creating personalized travel experiences—from guided city tours and seasonal trips to unique 
+          cultural immersions. WanderNippon makes traveling to Japan easy, exciting, and unforgettable.
           </p>
         </div>
         <div class="footer__col">
